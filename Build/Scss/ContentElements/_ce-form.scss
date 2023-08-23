@@ -1,0 +1,9 @@
+
+.ce-form{
+    .row-form{
+        flex-direction: column-reverse;
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+h4 {
+    word-break: break-word;
+    font-family: $font-family-base; 
+    letter-spacing: $letter-spacing-normal;
+    color: $color-black;
+    text-transform: capitalize;
+    span{
+        font-weight: $font-weight-regular;
+    }
+}
+
+h1 {
+    // 65/65/700 & 36/40
+    font-weight: $font-weight-bold;
+    font-size: $font-size-large-mobile-1;
+    line-height: $line-height-large-mobile-1;
+
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-large-1;
+        line-height: $line-height-large-1;
+    }
+}
+
+.h1-tag {
+    @extend h1;
+}
+
+h2 {
+    //55/55/700 & 32/35
+    font-weight: $font-weight-bold;  
+    font-size: $font-size-large-mobile-0;
+    line-height: $line-height-large-mobile-0;
+
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-large-0;
+        line-height: $line-height-large-0;
+    }
+}
+
+.h2-tag {
+    @extend h2;
+}
+
+h3 {
+    // 45/45/600 & 28/33
+    font-weight: $font-weight-bold;  
+    font-size: $font-size-medium-mobile-0;
+    line-height: $line-height-medium-mobile-0;
+
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-0;
+        line-height: $line-height-medium-0;
+    }
+}
+
+.h3-tag {
+    @extend h3;
+}
+
+
+h4 {
+    //38/38/700 & 24/24
+    font-weight: $font-weight-bold;  
+    font-size: $font-size-medium-mobile-1;
+    line-height: $line-height-medium-mobile-1;
+
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-1;
+        line-height: $line-height-medium-1;
+    }
+}
+
+
+h5 {
+    //25/25/700 & 20/20
+    font-weight: $font-weight-bold;  
+    font-size: $font-size-medium-mobile-2;
+    line-height: $line-height-medium-mobile-2;
+
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-2;
+        line-height: $line-height-medium-2;
+    }
+}
+
+
+
+h6 {
+    //20/20/700 & 18/18
+    font-weight: $font-weight-bold;  
+    font-size: $font-size-medium-mobile-3;
+    line-height: $line-height-medium-mobile-3;
+
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-3;
+        line-height: $line-height-medium-3;
+    }
+}

@@ -1,0 +1,19 @@
+.ce-text {
+
+    .headline {
+        margin-bottom: 25px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 50px;
+        }
+    }
+    .subtitle{
+        color: $dark-gray;
+        margin-bottom: 15px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 25px;
+        }
+    }
+
+
+}
+

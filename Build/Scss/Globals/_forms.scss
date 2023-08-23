@@ -1,0 +1,277 @@
+
+label {
+    color:$dark-gray-2;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px; 
+    letter-spacing: 0.12px;
+    &.form-check-label {
+        cursor: pointer;
+        all: unset;
+        color: $color-black;
+        hyphens: auto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.16px;
+    }
+
+}
+.form-group{
+    margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 20px;
+    }
+    p{
+        color: $color-black;
+    }
+}
+input,
+textarea,
+select {
+    &.form-control {
+        border-radius: 10px;
+        background-color: transparent;
+        color: $dark-gray;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px solid;
+        border-color:  $dark-gray-1;
+        outline: none;
+        height: auto;
+
+        &:focus {
+            background-color: transparent;
+            color: $color-black;
+            border-color:  $color-black;
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color:  $light-gray-2;
+        }
+
+        &:disabled {
+            background-color: transparent;
+            border-color:  $light-gray-2;
+
+            &::placeholder {
+                color:  $light-gray-2;
+            }
+        }
+    }
+}
+input[type=checkbox],
+input[type=radio] {
+    appearance: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+input[type=submit] {
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+// checkbox form & radio form
+.checkbox-section {
+    .check{
+        padding-right: 16px;
+    }
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-check {
+    margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 17px;
+    }
+}
+.form-check-inline {
+    align-items: flex-start;
+    .form-check-input,
+    .form-radio-input {
+        min-width: 24px;
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        border: 2px solid $color-black;
+        border-radius: 3px;
+        margin-right: 14px;
+        appearance: none;
+
+        &:focus {
+            background-color: transparent;
+        }
+
+        &:checked {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url(../Img/Icons/check-black.svg);
+                height: 24px;
+                width: 24px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+// input file upload
+.upload-section {
+    input[type=file] {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px; 
+        letter-spacing: 0.16px;
+    }
+
+    .file-upload-box {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        @include media-breakpoint-up(md) {
+            height: 344px;
+        }
+    }
+
+    .file-upload-message {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #DDD;
+        p {
+            margin-top: 35px;
+            color: black;
+            padding: 0 27px;
+            text-align: center;
+        }
+    }
+
+    #feedback {
+        margin-top: 20px;
+    }
+
+    .file-upload-progress {
+        align-items: center;
+        display: flex;
+        margin-top: 20px;
+
+        #progress1 {
+            width: 100%;
+            height: 2em;
+        }
+
+        #progress2 {
+            width: 100%;
+            height: 2em;
+        }
+
+        #progress-info1 {
+            margin-bottom: 0;
+            padding-right: 5px;
+        }
+
+        #progress-info2 {
+            margin-bottom: 0;
+            padding-right: 5px;
+        }
+    }
+}
+// end of input type file
+
+// valdidation form style 
+form{
+    &.was-validated {
+        .form-check {
+            flex-wrap: wrap;
+       }
+        .form-group{
+            margin-bottom: 20px;
+        }
+
+
+        .form-control:invalid,
+        .form-control.is-invalid {
+            border-color: $warning-red;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $warning-red;
+            }
+        }
+
+        .form-control:valid,
+        .form-control.is-valid {
+            background-image: none;
+            border-color: $color-black;
+
+            &:focus {
+                border-color: $color-black;
+                box-shadow: none;
+            }
+        }
+
+        .form-radio-input:invalid~.form-radio-label,
+        .form-check-input:invalid~.form-check-label {
+            color: $warning-red;
+
+            p,
+            a {
+                color: $warning-red;
+                @extend .bold;
+            }
+        }
+
+        .form-radio-input:invalid,
+        .form-check-input:invalid {
+            padding-right: 0 !important;
+            border-color: $warning-red;
+            background-image: unset;
+        }
+
+        .form-radio-input:valid,
+        .form-check-input:valid {
+            padding-right: 0 !important;
+            background-image: unset;
+        }
+        
+        .form-radio-input:valid~.form-radio-label,
+        .form-check-input:valid~.form-check-label {
+            color: $color-black;
+        }
+
+    }
+}
+
+.google-map{
+    margin-bottom: 30px;
+}
+.map{
+    margin-bottom: 40px;
+    p{
+        margin-bottom: 0;
+    }
+    .info-map{
+        margin-bottom: 30px;
+    }
+    .btn{
+        margin-top: 30px;
+    }
+
+}

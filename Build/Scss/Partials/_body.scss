@@ -1,0 +1,53 @@
+body{
+   // overflow: hidden;
+}
+
+.white {
+    color: $color-white;
+
+    a,
+    p {
+        color: $color-white;
+    }
+}
+.bg {
+
+    /* background colors used for the content element teaser grid */
+    &-overlay {
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        background-image: url(https://zoricowa.cyon.site/media/pages/support/349de15604-1684767077/onrain-bg2.webp);
+        background-size: cover;
+    }
+}
+.no-scroll {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+}
+
+.no-scroll {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+    &:before{
+        top: 0;
+        z-index: 4;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(56,56,56,0.3);
+        transition: opacity .15s linear;
+        backdrop-filter: blur(3px);
+    }
+}
+::selection {
+    background: #ffe290;
+    color: #fff;
+    text-shadow: none;
+}

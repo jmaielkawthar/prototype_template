@@ -1,0 +1,119 @@
+.style-guide{
+    //  background-color: rgba(30, 30, 30, 0.02);
+      table{
+          &.list-table{
+              width: 100%;
+          }
+      }
+      .icon-logo{
+          width: 100%;
+      }
+      .dark-bg{
+          padding: 20px;
+          background-color: #012552;
+      }
+      .title-style-guide{
+          color: #012552;
+          text-indent: 30px;
+         // text-decoration: underline;
+          text-transform: capitalize;
+          margin: 40px auto;
+          font-weight: 800;
+          text-align: center;
+          //color:#019A9D;
+          width: 100%;
+          border-bottom: 2px solid #012552;
+          border-top: 2px solid #012552;
+          padding: 20px;
+          background-color: #EDF1F5;
+      }
+      .subtitle{
+          text-transform: capitalize;
+          margin: 10px 0;
+          padding-bottom: 10px;
+          font-weight: 700;
+          color:#012552;
+          text-decoration: underline;
+    
+  
+      }
+      .subtitle-span{
+          display: flex;
+          align-items: baseline;
+          flex-wrap: wrap;
+          span{
+              font-weight: 500;
+              font-size: 25px;
+              line-height: 32px;
+              padding: 0 10px;
+              text-decoration: none;
+              font-weight: 400;
+          }
+      }
+  
+      .sg-box-color {
+          width: 100%;
+          height: 50px;
+      }
+      .text-table {
+          tr {
+              td:first-child {
+                  width: 10%;
+              }
+  
+              td:nth-child(2) {
+                  width: 50%;
+              }
+          }
+      }
+      .bg-color{
+          width: 100%;
+          height: 100px;
+          padding: 20px;
+  
+      }
+      .lists{
+          table{
+              width: 100%;
+          }
+      }
+      textarea{
+          width: 100%;
+      }
+      .text-section{
+          .text-headline{
+              display: none;
+              @include media-breakpoint-up(md){
+                  display: flex;
+              }
+              hr{
+                  width: 100%;
+              }
+              .table-title{
+                  font-size: 20px;
+                  font-weight: 700;
+                 text-transform: uppercase;
+              }
+          }
+          .text-item{
+              padding: 20px 20px 0;
+              text-align: center;
+              @include media-breakpoint-up(md){
+                  padding: 0;
+                  text-align: left;
+              }
+              p{
+                
+                  border-bottom: 1px solid black;
+                  border-top: 1px solid black;
+                  padding:  10px 0;
+                  @include media-breakpoint-up(md){
+                      padding: 0;
+                      border-bottom:none;
+                      border-top:none;
+                  }
+              }
+          }
+      }
+    
+  }

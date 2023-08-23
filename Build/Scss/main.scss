@@ -1,0 +1,79 @@
+/* ------------------------------------
+1. Vendors & NPM components
+------------------------------------ */
+
+@import "../node_modules/slick-carousel/slick/slick.scss";
+
+
+/* ------------------------------------
+2. Basics
+------------------------------------ */
+@import "Base/variables";
+@import "Base/bootstrap";
+@import "Base/bootstrap-grid";
+@import "Base/colors";
+@import "Base/development-utilities";
+@import "Base/font-faces";
+@import "Base/font-variables-and-settings";
+@import "Base/mixins";
+@import "Base/z-indeces";
+
+/* ------------------------------------
+3. Functions
+------------------------------------ */
+@import "Functions/shade-and-tint";
+@import "Functions/slick-theme";
+@import "Functions/fancybox";
+
+/* ------------------------------------
+4. Globals
+------------------------------------ */
+@import "Globals/headlines";
+@import "Globals/images";
+@import "Globals/texts";
+@import "Globals/buttons";
+@import "Globals/forms";
+@import "Globals/lists";
+@import "Globals/icons";
+@import "Globals/pagination";
+@import "Globals/table";
+@import "Globals/links"; 
+
+
+
+
+/* ------------------------------------
+5. Partials
+------------------------------------ */
+@import "Partials/body";
+@import "Partials/header";
+@import "Partials/footer";
+@import "Partials/style-guide";
+
+
+/* ------------------------------------
+6. Conditionals
+------------------------------------ */
+@import "Conditionals/only-ie";
+@import "Conditionals/only-ipad";
+@import "Conditionals/only-print";
+
+/* ------------------------------------
+ 7. Content Elements
+ ------------------------------------ */
+
+ @import "ContentElements/ce-header-slider";
+ @import "ContentElements/ce-heading";
+ @import "ContentElements/ce-text"; 
+ @import "ContentElements/ce-teaser-card";
+ @import "ContentElements/sidebar";
+ @import "ContentElements/ce-two-teasercard";
+ @import "ContentElements/ce-accordion";
+ @import "ContentElements/ce-teasercard-full-width";
+ @import "ContentElements/ce-headline-two-texts";
+ @import "ContentElements/ce-teaser-image-text";
+ @import "ContentElements/ce-items-image-text";
+ @import "ContentElements/ce-form";
+ @import "ContentElements/_ce-gallery";
+ @import "ContentElements/_ce-masonry";
+

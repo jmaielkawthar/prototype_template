@@ -1,0 +1,45 @@
+.icon {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon {
+    &-menu-open {
+        @extend .icon;
+        width: 25px;
+        height: 10px;
+        background-image: url(../Img/Icons/burger_menu.svg);
+    }
+
+    &-menu-close {
+        @extend .icon;
+        width: 14px;
+        height: 14px; 
+        background-image: url(../Img/Icons/menu_close.svg);
+    }
+    
+    &-linkedin {
+        position: relative;
+        padding-left: 25px;
+        display: flex;
+        &:before{
+            position: absolute;
+            content:"";
+            @extend .icon;
+            left: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background-image: url(../Img/Icons/linkedIn.svg);
+        }
+
+    }
+    &-cloud-upload{
+        @extend .icon;
+        width: 52px;
+        height: 52px;
+        background-image: url(../Img/Icons/upload-file-icon.svg);
+    }
+}

@@ -1,0 +1,68 @@
+.ce-accordion{
+    margin-bottom: 25px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 50px;
+    }
+    .headline {
+        margin-bottom: 25px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+#accordion{
+    border-top: 1px solid $light-gray-2;
+    .card{
+        padding: 0;
+        border-radius:0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid $light-gray-2;
+    }
+    .card-header{
+        border-radius:0;
+        background-color: transparent;
+        border-bottom: 1px solid transparent;
+        padding: 15px  0;
+
+        button{
+            background-color: transparent;
+            width: 100%;
+            color:$color-black;
+            border: none;
+            text-align: left;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 800;
+            padding: 0;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                right: 0;
+                top:6px;
+                width: 30px;
+                height: 16px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url(../Img/Icons/accordion-arrow.svg);
+            }
+ 
+        }
+        button[aria-expanded="true"]{
+            &:before{
+                transform: rotate(270deg);
+            }
+        }
+        button[aria-expanded="false"]{
+            &:before{
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    .card-body{
+        padding: 20px 20px  20px  0;
+      
+    }
+}

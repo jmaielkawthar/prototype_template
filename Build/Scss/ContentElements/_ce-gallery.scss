@@ -1,0 +1,83 @@
+.ce-gallery{
+    figure{
+        width: 100%;
+        height: 100%;
+        img{
+            margin-left: auto;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+// fancy box position buttons for type 2
+$btnSize: 40px;
+$btnPos: -50px;
+$btnBg: rgba(0, 0, 0, 0.3);
+$btnHover: rgba(0, 0, 0, 0.8);
+.slideClass {
+  .button-prev,
+  .button-next,
+  .button-close {
+    position: absolute;
+    background: $btnBg;
+    width: $btnSize;
+    height: $btnSize;
+    color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+      background: $btnHover;
+    }
+  }
+  .button-next {
+    right: 0;
+    top: 50%;
+    margin-top: calc(-#{$btnSize}/2);
+    &:before{
+        position: absolute;
+        content:"";
+        left: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        background-image: url(../Img/Icons/arrow-right-white.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+     &.active,&:hover {
+      opacity: 0.4;
+       background:$btnBg;
+    }
+  }
+  .button-prev {
+    left: 0;
+    top: 50%;
+    margin-top: calc(-#{$btnSize}/2);
+    &:before{
+        position: absolute;
+        content:"";
+        left: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        background-image: url(../Img/Icons/arrow-left-white.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.active,&:hover {
+      opacity: 0.4;
+             background:$btnBg;
+    }
+  }
+  .button-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

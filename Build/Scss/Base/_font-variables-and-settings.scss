@@ -1,0 +1,106 @@
+/* ------------------------------------
+  Font-weight
+ ------------------------------------ */
+ $font-extra-light: 200;
+ $font-weight-light: 300;
+ $font-weight-regular: 400;
+ $font-weight-medium: 500;
+ $font-weight-semi-bold: 600;
+ $font-weight-bold: 700;
+ $font-weight-extra-bold: 800;
+ $font-weight-very-extra-bold: 900;
+
+
+ /* ------------------------------------
+   Font-styles
+  ------------------------------------ */
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+/* ------------------------------------
+   letter-spacing
+  ------------------------------------ */
+  $letter-spacing-normal: 0;
+  $letter-spacing-small: 0.1px;
+  $letter-spacing-medium: 0.5px;
+
+
+/* ------------------------------------
+  Base Variables
+  ------------------------------------ */
+
+  $font-family-source: 'Euclid Circular A';
+  $font-family-second: 'Raleway, sans-serif';
+  $font-family-third: 'Quicksand, sans-serif';
+  $font-family-base: $font-family-source;
+
+   /* ------------------------------------
+    Desktop Font sizes
+   ------------------------------------ */
+   $font-size-small-0 : 14px; 
+   $font-size-regular-0 : 16px; //p
+
+   $font-size-medium-3 : 20px; //h6
+   $font-size-medium-2 : 25px; //h5
+   $font-size-medium-1 : 38px; // h4
+   $font-size-medium-0 : 45px; // h3
+
+   $font-size-large-0 : 55px; // h2
+   $font-size-large-1 : 65px; // h1
+   
+   $font-size-large-2 : 75px; 
+  
+  /* ------------------------------------
+    Desktop Line Heights
+    ------------------------------------ */
+   $line-height-small-0 : 14px;
+
+   $line-height-regular-0: 16px; //p
+   
+   $line-height-medium-3 : 20px; //h6
+   $line-height-medium-2 : 24px; //h5
+   $line-height-medium-1 : 38px; //h4
+   $line-height-medium-0 : 45px; //h3
+
+   $line-height-large-0 : 55px; //h2
+   $line-height-large-1 : 65px; // h1
+
+   $line-height-large-2 : 75px; 
+  
+  /* ------------------------------------
+   Mobile Font sizes
+   ------------------------------------ */
+   $font-size-small-mobile-0: 11px;
+
+   $font-size-regular-mobile-0: 16px;//p
+
+   $font-size-medium-mobile-3: 18px;//h6
+   $font-size-medium-mobile-2: 20px;//h5
+   $font-size-medium-mobile-1: 24px;//h4
+   $font-size-medium-mobile-0: 28px;//h3
+
+   $font-size-large-mobile-0: 32px;//h2
+   $font-size-large-mobile-1: 36px;//h1
+
+   $font-size-large-mobile-2: 40px;
+
+   
+  /* ------------------------------------
+   Mobile Line Heights
+   ------------------------------------ */
+   $line-height-small-mobile-0: 14px;
+   $line-height-regular-mobile-1: 16px;
+
+   $line-height-regular-mobile-0: 16px;//p 
+
+   $line-height-medium-mobile-3: 18px;//h6
+   $line-height-medium-mobile-2: 20px;//h5
+   $line-height-medium-mobile-1: 24px;//h4
+   $line-height-medium-mobile-0: 28px;//h3
+
+   $line-height-large-mobile-0: 32px;//h2
+   $line-height-large-mobile-1: 36px;//h1
+
+   $line-height-large-mobile-2: 40px;
+
+

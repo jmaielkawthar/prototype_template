@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        td,
+        th {
+            padding: 12px 12px 12px 0;
+            vertical-align: top;
+            border-bottom: 1px solid $color-neutral-001;
+            hyphens: auto;
+            word-break: break-word;
+        }
+    }
+}

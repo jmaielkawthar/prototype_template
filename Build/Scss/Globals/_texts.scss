@@ -1,0 +1,80 @@
+div,
+p,
+blockquote,
+pre {
+    word-break: break-word;
+    letter-spacing: $letter-spacing-normal;
+    font-size:   $font-size-regular-0;
+    line-height: $line-height-regular-0;
+    font-weight: $font-weight-regular;  
+    font-family: $font-family-base;
+    color:$dark-gray;
+}
+p{
+    margin-bottom: 15px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 25px;
+    }
+    &.no-margin{
+        margin: 0;
+    }
+}
+
+.bold {
+    font-weight: $font-weight-bold;
+}
+.font-regular {
+    font-weight: $font-weight-regular;
+}
+
+
+p ,
+.text{
+    // 16/22/400  // 0.16
+    font-size:$font-size-regular-mobile-0;
+    line-height:$line-height-regular-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-regular-0;
+        line-height:$line-height-regular-0;
+    }
+} 
+.text-medium{
+    //24/34.8/600 & 18/23
+    font-size: $font-size-medium-mobile-0;
+    line-height:$line-height-medium-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size:   $font-size-medium-0;
+        line-height:  $line-height-medium-0;
+    }
+}
+
+.text-small{
+    // 14/21.7/400 && 11/14 
+    font-size: $font-size-small-mobile-0;
+    line-height:$line-height-small-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size:   $font-size-small-0;
+        line-height:  $line-height-small-0;
+    }
+}
+.heading-medium{
+    // 36/22/400 & 28/33
+    font-size: $font-size-medium-mobile-0;
+    line-height: $line-height-medium-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-0;
+        line-height:  $line-height-regular-0;
+    }
+
+}
+
+.heading-small{
+    //20/23.4/600 & 16/22/600
+    font-weight: $font-weight-semi-bold;  
+    font-size:$font-size-regular-mobile-0;
+    line-height:$line-height-regular-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-regular-0;
+        line-height:$line-height-regular-0;
+    }
+}

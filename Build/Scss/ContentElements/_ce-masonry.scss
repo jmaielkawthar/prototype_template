@@ -1,0 +1,25 @@
+.ce-masonry{
+    .masonry-item{
+        .item{
+            border: 1px solid black;
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
+            padding: 25px;
+            display: flex;
+            margin-bottom: 25px;
+            flex-direction: column;
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    figure{
+        width: 100%;
+        height: 100%;
+        img{
+            margin-left: auto;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+    }
+}
