@@ -1,17 +1,4 @@
-body{
-   // overflow: hidden;
-}
-
-.white {
-    color: $color-white;
-
-    a,
-    p {
-        color: $color-white;
-    }
-}
 .bg {
-
     /* background colors used for the content element teaser grid */
     &-overlay {
         background-blend-mode: overlay;

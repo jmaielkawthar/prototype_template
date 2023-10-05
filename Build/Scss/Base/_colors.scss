@@ -53,3 +53,42 @@ $color-light-red: #FEF4F4;
 $color-light-green: #F2F9F1;
 
 
+.white{
+    &-txt{
+        color: $color-white;
+        a,
+        p {
+            color: $color-white;
+        }
+    }
+    &-bg{
+        background-color: $color-white;
+    }
+}
+
+
+
+// Neutral Colors gray 
+$color-neutral-700: #262626;
+$color-neutral-600: #666666;
+$color-neutral-500: #999999;
+$color-neutral-400: #CCCCCC;
+
+
+//  colors primary 
+$color-primary-500:#FDC300;
+$color-primary-501:#FFD64A;
+
+
+//  colors secondary 
+$color-secondary-500:#485156;
+$color-secondary-501:#D54E3F;
+$color-secondary-502:#59757E;
+$color-secondary-503:#548952;
+$color-secondary-504:#DA6849;
+$color-secondary-505:#56477C;
+$color-secondary-506:#375189;
+$color-secondary-507:#D1D6DA;
+$color-secondary-508:#E8EBED;
+$color-secondary-509: #DEE5ED;
+

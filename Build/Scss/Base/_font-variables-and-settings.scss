@@ -1,17 +1,4 @@
 /* ------------------------------------
-  Font-weight
- ------------------------------------ */
- $font-extra-light: 200;
- $font-weight-light: 300;
- $font-weight-regular: 400;
- $font-weight-medium: 500;
- $font-weight-semi-bold: 600;
- $font-weight-bold: 700;
- $font-weight-extra-bold: 800;
- $font-weight-very-extra-bold: 900;
-
-
- /* ------------------------------------
    Font-styles
   ------------------------------------ */
 $font-style-normal: normal;
@@ -24,15 +11,6 @@ $font-style-italic: italic;
   $letter-spacing-small: 0.1px;
   $letter-spacing-medium: 0.5px;
 
-
-/* ------------------------------------
-  Base Variables
-  ------------------------------------ */
-
-  $font-family-source: 'Euclid Circular A';
-  $font-family-second: 'Raleway, sans-serif';
-  $font-family-third: 'Quicksand, sans-serif';
-  $font-family-base: $font-family-source;
 
    /* ------------------------------------
     Desktop Font sizes
@@ -104,3 +82,57 @@ $font-style-italic: italic;
    $line-height-large-mobile-2: 40px;
 
 
+   /* ------------------------------------
+  Font-weight
+ ------------------------------------ */
+ $font-extra-light: 200;
+ $font-weight-light: 300;
+ $font-weight-regular: 400;
+ $font-weight-medium: 500;
+ $font-weight-semi-bold: 600;
+ $font-weight-bold: 700;
+ $font-weight-extra-bold: 800;
+ $font-weight-very-extra-bold: 900;
+
+   /* ------------------------------------
+  Base Variables
+  ------------------------------------ */
+
+  $font-family-source: 'Euclid Circular A';
+  $font-family-second: 'Raleway, sans-serif';
+  $font-family-third: 'Quicksand, sans-serif';
+  $font-family-base: $font-family-source;
+
+.font{
+    &-extra-light{
+        font-weight: $font-extra-light;
+    }
+    
+    &-light{
+        font-weight: $font-weight-light;
+    }
+    
+    &-regular{
+        font-weight: $font-weight-regular;
+    }
+    
+    &-medium{
+        font-weight: $font-weight-medium;
+    }
+    
+    &-semi-bold{
+        font-weight: $font-weight-semi-bold;
+    }
+    
+    &-bold{
+        font-weight:$font-weight-bold;
+    }
+    
+    &-extra-bold{
+        font-weight: $font-weight-extra-bold;
+    }
+    
+    &-very-extra-bold{
+        font-weight: $font-weight-very-extra-bold;
+    }
+}

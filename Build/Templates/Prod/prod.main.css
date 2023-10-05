@@ -35898,6 +35898,17 @@ Formula is: $grid-columns ÷ <number> = <variable>
 Example for 5 columns (12 ÷ 5 = 2.4) and breakpoint 'sm':
 @include make-sm-column(2.4);
 ------------------------------------ */
+.white-txt {
+  color: #fff; }
+  .white-txt a,
+  .white-txt p,
+  .white-txt .ce-teaser-card .headline span,
+  .ce-teaser-card .headline .white-txt span {
+    color: #fff; }
+
+.white-bg {
+  background-color: #fff; }
+
 /* ------------------------------------
 Very convenient
 =======================================
@@ -36019,17 +36030,151 @@ But don't forget to hide these when going live!
   font-weight: 700;
   font-display: swap; }
 
-/* ------------------------------------
-  Font-weight
- ------------------------------------ */
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-MediumItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-Medium.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-Italic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-Black.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-Light.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-BlackItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-Bold.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-Regular.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-ExtraLight.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-SemiBold.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-ExtraLightItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-BoldItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-LightItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-ExtraBold.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-ThinItalic.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../Fonts//Poppins/Poppins-Thin.woff2") format("woff2"), url("../Fonts//Poppins/Poppins-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url("../Fonts//Work-sans/WorkSans-Italic.woff2") format("woff2"), url("../Fonts//Work-sans/WorkSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url("../Fonts//Work-sans/WorkSans-Regular.woff2") format("woff2"), url("../Fonts//Work-sans/WorkSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 /* ------------------------------------
    Font-styles
   ------------------------------------ */
 /* ------------------------------------
    letter-spacing
-  ------------------------------------ */
-/* ------------------------------------
-  Base Variables
   ------------------------------------ */
 /* ------------------------------------
     Desktop Font sizes
@@ -36043,6 +36188,36 @@ But don't forget to hide these when going live!
 /* ------------------------------------
    Mobile Line Heights
    ------------------------------------ */
+/* ------------------------------------
+  Font-weight
+ ------------------------------------ */
+/* ------------------------------------
+  Base Variables
+  ------------------------------------ */
+.font-extra-light {
+  font-weight: 200; }
+
+.font-light {
+  font-weight: 300; }
+
+.font-regular {
+  font-weight: 400; }
+
+.font-medium {
+  font-weight: 500; }
+
+.font-semi-bold {
+  font-weight: 600; }
+
+.font-bold {
+  font-weight: 700; }
+
+.font-extra-bold {
+  font-weight: 800; }
+
+.font-very-extra-bold {
+  font-weight: 900; }
+
 /* ------------------------------------
 Z-Indeces
 =======================================
@@ -37255,47 +37430,86 @@ button.disabled, a.disabled {
     background: #323232;
     color: #fff; }
 
-.a-button {
+.third-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #043F85;
+  padding: 12px 24px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  border: none; }
+  @media (min-width: 992px) {
+    .third-button {
+      padding: 20px 60px; } }
+  .third-button:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #032C5D; }
+  .third-button.disabled {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+    background-color: transparent; }
+
+.fouth-button {
+  text-decoration: none;
+  color: #5E99C4;
+  border: 2px solid #5E99C4;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out; }
+  .fouth-button:hover {
+    text-decoration: none;
+    background-color: #5E99C4;
+    color: #fff; }
+  .fouth-button.disabled {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+    background-color: transparent; }
+
+.flex-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 label {
-  color: #323232;
-  font-size: 12px;
-  font-weight: 600;
+  font-family: "Raleway, sans-serif";
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 22px;
-  letter-spacing: 0.12px; }
-  label.form-check-label {
-    cursor: pointer;
-    all: unset;
-    color: #000000;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    font-size: 18px;
+  margin-bottom: 7px; }
+  label.form-radio-label, label.form-check-label {
     font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0.16px; }
+    margin-bottom: 0; }
 
 .form-group {
+  font-family: "Raleway, sans-serif";
   margin-bottom: 10px; }
   @media (min-width: 992px) {
     .form-group {
-      margin-bottom: 20px; } }
-  .form-group p, .form-group .ce-teaser-card .headline span, .ce-teaser-card .headline .form-group span {
-    color: #000000; }
+      margin-bottom: 15px; } }
+
+.disabled label {
+  color: #999999; }
 
 input.form-control,
 textarea.form-control,
 select.form-control {
+  font-family: "Raleway, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   border-radius: 10px;
   background-color: transparent;
-  color: #3c3c3c;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid;
-  border-color: #757575;
+  color: #000000;
+  padding: 13px;
+  border-radius: 0;
+  border: 3px solid;
+  border-color: #000000;
   outline: none;
   height: auto; }
   input.form-control:focus,
@@ -37303,38 +37517,38 @@ select.form-control {
   select.form-control:focus {
     background-color: transparent;
     color: #000000;
-    border-color: #000000;
+    border-color: #FDC300;
     -webkit-box-shadow: none;
     box-shadow: none; }
   input.form-control::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder, select.form-control::-webkit-input-placeholder {
-    color: #ABABAB; }
+    color: #999999; }
   input.form-control::-moz-placeholder, textarea.form-control::-moz-placeholder, select.form-control::-moz-placeholder {
-    color: #ABABAB; }
+    color: #999999; }
   input.form-control:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder, select.form-control:-ms-input-placeholder {
-    color: #ABABAB; }
+    color: #999999; }
   input.form-control::-ms-input-placeholder, textarea.form-control::-ms-input-placeholder, select.form-control::-ms-input-placeholder {
-    color: #ABABAB; }
+    color: #999999; }
   input.form-control::placeholder,
   textarea.form-control::placeholder,
   select.form-control::placeholder {
-    color: #ABABAB; }
+    color: #999999; }
   input.form-control:disabled,
   textarea.form-control:disabled,
   select.form-control:disabled {
     background-color: transparent;
-    border-color: #ABABAB; }
+    border-color: #b3b3b3; }
     input.form-control:disabled::-webkit-input-placeholder, textarea.form-control:disabled::-webkit-input-placeholder, select.form-control:disabled::-webkit-input-placeholder {
-      color: #ABABAB; }
+      color: #999999; }
     input.form-control:disabled::-moz-placeholder, textarea.form-control:disabled::-moz-placeholder, select.form-control:disabled::-moz-placeholder {
-      color: #ABABAB; }
+      color: #999999; }
     input.form-control:disabled:-ms-input-placeholder, textarea.form-control:disabled:-ms-input-placeholder, select.form-control:disabled:-ms-input-placeholder {
-      color: #ABABAB; }
+      color: #999999; }
     input.form-control:disabled::-ms-input-placeholder, textarea.form-control:disabled::-ms-input-placeholder, select.form-control:disabled::-ms-input-placeholder {
-      color: #ABABAB; }
+      color: #999999; }
     input.form-control:disabled::placeholder,
     textarea.form-control:disabled::placeholder,
     select.form-control:disabled::placeholder {
-      color: #ABABAB; }
+      color: #999999; }
 
 input[type=checkbox],
 input[type=radio] {
@@ -37350,34 +37564,42 @@ input[type=submit] {
   font-weight: 700;
   line-height: 22px; }
 
-.checkbox-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  .checkbox-section .check {
-    padding-right: 16px; }
+input[type=search] {
+  background: transparent url(../Img/Icons/search-icon.svg) no-repeat top right !important;
+  background-position: right 13px top 13px !important;
+  background-size: 24px !important;
+  width: 100%; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+.checkbox-group, .radiobox-group {
+  margin-top: 15px; }
 
 .form-check {
   margin-bottom: 10px; }
   @media (min-width: 992px) {
     .form-check {
-      margin-bottom: 17px; } }
+      margin-bottom: 15px; } }
 
 .form-check-inline {
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .form-check-inline .form-check-input,
   .form-check-inline .form-radio-input {
     min-width: 24px;
     cursor: pointer;
     height: 24px;
     width: 24px;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    margin-right: 14px;
+    border: 2px solid;
+    border-color: #485156;
+    margin-right: 8px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
@@ -37386,11 +37608,13 @@ input[type=submit] {
       background-color: transparent; }
     .form-check-inline .form-check-input:checked,
     .form-check-inline .form-radio-input:checked {
-      position: relative; }
+      position: relative;
+      border-color: #FDC300; }
       .form-check-inline .form-check-input:checked::before,
       .form-check-inline .form-radio-input:checked::before {
         content: "";
         position: absolute;
+        background-size: 24px;
         background-image: url(../Img/Icons/check-black.svg);
         height: 24px;
         width: 24px;
@@ -37398,79 +37622,35 @@ input[type=submit] {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
+    .form-check-inline .form-check-input:disabled,
+    .form-check-inline .form-radio-input:disabled {
+      border-color: #a6a6a6;
+      background-color: #CCCCCC;
+      pointer-events: none;
+      cursor: unset; }
+      .form-check-inline .form-check-input:disabled ~ .form-check-label,
+      .form-check-inline .form-radio-input:disabled ~ .form-check-label {
+        opacity: 0.8;
+        color: #999999; }
+  .form-check-inline .form-radio-input {
+    border-radius: 50%; }
+    .form-check-inline .form-radio-input:checked::before {
+      background-image: unset;
+      background-color: #FDC300;
+      border-radius: 50%;
+      height: 14px;
+      width: 14px; }
+    .form-check-inline .form-radio-input:disabled {
+      border-color: #a6a6a6;
+      background-color: #CCCCCC;
+      pointer-events: none;
+      cursor: unset; }
+      .form-check-inline .form-radio-input:disabled ~ .form-radio-label {
+        opacity: 0.8;
+        color: #999999; }
 
-.upload-section input[type=file] {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.16px; }
-
-.upload-section .file-upload-box {
-  position: relative;
-  width: 100%;
-  height: 280px; }
-  @media (min-width: 992px) {
-    .upload-section .file-upload-box {
-      height: 344px; } }
-
-.upload-section .file-upload-message {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: #DDD; }
-  .upload-section .file-upload-message p, .upload-section .file-upload-message .ce-teaser-card .headline span, .ce-teaser-card .headline .upload-section .file-upload-message span {
-    margin-top: 35px;
-    color: black;
-    padding: 0 27px;
-    text-align: center; }
-
-.upload-section #feedback {
-  margin-top: 20px; }
-
-.upload-section .file-upload-progress {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px; }
-  .upload-section .file-upload-progress #progress1 {
-    width: 100%;
-    height: 2em; }
-  .upload-section .file-upload-progress #progress2 {
-    width: 100%;
-    height: 2em; }
-  .upload-section .file-upload-progress #progress-info1 {
-    margin-bottom: 0;
-    padding-right: 5px; }
-  .upload-section .file-upload-progress #progress-info2 {
-    margin-bottom: 0;
-    padding-right: 5px; }
-
-form.was-validated .form-check {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+.form-radio {
+  margin-bottom: 15px; }
 
 form.was-validated .form-group {
   margin-bottom: 20px; }
@@ -37520,17 +37700,12 @@ form.was-validated .form-radio-input:valid ~ .form-radio-label,
 form.was-validated .form-check-input:valid ~ .form-check-label {
   color: #000000; }
 
-.google-map {
-  margin-bottom: 30px; }
-
-.map {
-  margin-bottom: 40px; }
-  .map p, .map .ce-teaser-card .headline span, .ce-teaser-card .headline .map span {
-    margin-bottom: 0; }
-  .map .info-map {
-    margin-bottom: 30px; }
-  .map .btn, .map .primary-button, .map .secondary-button {
-    margin-top: 30px; }
+.invalid-feedback {
+  font-family: "Raleway, sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 6px; }
 
 ul li::marker {
   font-size: 12px; }
@@ -37599,24 +37774,51 @@ a {
       line-height: 16px; } }
   a:hover {
     color: #3c3c3c; }
+  a.disabled {
+    pointer-events: none;
+    cursor: default; }
 
-.a-link {
+.link {
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: none; }
+
+.colored-link {
   color: #3c3c3c;
   text-decoration: none; }
-  .a-link:hover {
+  .colored-link:hover {
     text-decoration: none;
-    color: #ffe9aa; }
+    color: #757575; }
 
-.underline-link a {
+.underline-link {
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  text-decoration: none; }
+  .underline-link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #ffe9aa; }
+
+.underline-colored-link {
+  color: #3c3c3c;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  text-decoration: none; }
+  .underline-colored-link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #ffe9aa;
+    color: #757575; }
+
+.animated-link a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid transparent; }
-  .underline-link a:hover {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px; }
+  .animated-link a:hover {
     border-bottom: 1px solid transparent; }
-    .underline-link a:hover:before {
+    .animated-link a:hover:before {
       right: 0 !important; }
-  .underline-link a::before {
+  .animated-link a::before {
     content: '';
     position: absolute;
     z-index: 0;
@@ -37632,17 +37834,114 @@ a {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out; }
 
+/*the container must be positioned relative:*/
+/*style the arrow inside the select element:*/
+/*point the arrow upwards when the select box is open (active):*/
+/*style the items (options), including the selected item:*/
+/*style items (options):*/
+/*hide the items when the select box is closed:*/
+select {
+  cursor: pointer; }
+  select.form-select, select {
+    color: #666666;
+    padding: 15px 40px 15px 22px;
+    border: 2px solid;
+    border-color: #485156;
+    outline: none;
+    background: transparent url(../Img/Icons/angle_down.svg) right 15px center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    select.form-select:focus, select:focus {
+      color: #000000;
+      border-color: #485156;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    select.form-select::-webkit-input-placeholder, select::-webkit-input-placeholder {
+      color: #666666; }
+    select.form-select::-moz-placeholder, select::-moz-placeholder {
+      color: #666666; }
+    select.form-select:-ms-input-placeholder, select:-ms-input-placeholder {
+      color: #666666; }
+    select.form-select::-ms-input-placeholder, select::-ms-input-placeholder {
+      color: #666666; }
+    select.form-select::placeholder, select::placeholder {
+      color: #666666; }
+    select.form-select.form-control:invalid, select.form-control:invalid, select.form-select.form-control.is-invalid, select.form-control.is-invalid {
+      background: transparent url(../Img/Icons/angle_down.svg) right 15px center no-repeat; }
+    select.form-select.form-control:valid, select.form-control:valid, select.form-select.form-control.is-valid, select.form-control.is-valid {
+      background: transparent url(../Img/Icons/angle_down.svg) right 15px center no-repeat; }
+
+.custom-select {
+  position: relative; }
+  .custom-select:invalid ~ .invalid-feedback {
+    display: block;
+    position: relative;
+    z-index: 999;
+    bottom: 0; }
+  .custom-select select {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    z-index: -1; }
+    .custom-select select.form-select.selected, .custom-select select.selected {
+      color: #000000; }
+  .custom-select.active select {
+    border: 2px solid #485156; }
+    .custom-select.active select.form-select, .custom-select.active select {
+      background: transparent url(../Img/Icons/angle_up.svg) right 15px top 15px no-repeat;
+      -webkit-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
+
+.select-selected {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  height: 55px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 0;
+  width: 100%; }
+
+.select-items {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-color: #485156;
+  min-width: 100%;
+  -webkit-box-shadow: 2px 18px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 18px 31px -10px rgba(0, 0, 0, 0.75);
+  overflow-y: auto;
+  position: absolute;
+  background-color: #fff;
+  max-height: 500px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 3; }
+  .select-items div {
+    word-wrap: break-word;
+    color: #000000;
+    padding: 15px 22px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .select-items div:hover {
+      background-color: #FDC300; }
+
+.select-hide {
+  display: none; }
+
+.same-as-selected {
+  background-color: #FDC300; }
+
 /* ------------------------------------
 5. Partials
 ------------------------------------ */
-.white {
-  color: #fff; }
-  .white a,
-  .white p,
-  .white .ce-teaser-card .headline span,
-  .ce-teaser-card .headline .white span {
-    color: #fff; }
-
 .bg {
   /* background colors used for the content element teaser grid */ }
   .bg-overlay {

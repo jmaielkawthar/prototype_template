@@ -1,66 +1,68 @@
 
 label {
-    color:$dark-gray-2;
-    font-size: 12px;
-    font-weight: 600;
+    font-family:  $font-family-second ;
+    color:$color-black;
+    font-size: 16px;
+    font-weight: 700;
     line-height: 22px; 
-    letter-spacing: 0.12px;
-    &.form-check-label {
-        cursor: pointer;
-        all: unset;
-        color: $color-black;
-        hyphens: auto;
-        font-size: 18px;
+    margin-bottom: 7px;
+    &.form-radio-label, &.form-check-label{
         font-weight: 400;
-        line-height: 22px;
-        letter-spacing: 0.16px;
+        margin-bottom: 0;
     }
-
 }
 .form-group{
+    font-family:  $font-family-second ;
     margin-bottom: 10px;
     @include media-breakpoint-up(md) {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
-    p{
-        color: $color-black;
+}
+.disabled{
+    label{
+        color:  $color-neutral-500;
     }
 }
 input,
 textarea,
 select {
     &.form-control {
+        font-family:  $font-family-second ;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px; 
         border-radius: 10px;
         background-color: transparent;
-        color: $dark-gray;
-        padding: 10px 15px;
-        border-radius: 5px;
-        border: 1px solid;
-        border-color:  $dark-gray-1;
+        color:$color-black;
+        padding: 13px;
+        border-radius: 0;
+        border: 3px solid;
+        border-color:  $color-black;
         outline: none;
         height: auto;
 
         &:focus {
             background-color: transparent;
             color: $color-black;
-            border-color:  $color-black;
+            border-color:  $color-primary-500;
             box-shadow: none;
         }
 
         &::placeholder {
-            color:  $light-gray-2;
+            color: lighten($color: $color-neutral-600 , $amount: 20)  ;
         }
 
         &:disabled {
             background-color: transparent;
-            border-color:  $light-gray-2;
+            border-color: lighten($color: $color-neutral-500, $amount: 10) ;
 
             &::placeholder {
-                color:  $light-gray-2;
+                color: $color-neutral-500   ;
             }
         }
     }
 }
+
 input[type=checkbox],
 input[type=radio] {
     appearance: none;
@@ -73,33 +75,43 @@ input[type=submit] {
     font-weight: 700;
     line-height: 22px;
 }
+input[type=search] {
+    background: transparent url(../Img/Icons/search-icon.svg) no-repeat top right !important;
+     background-position: right 13px top 13px !important;
+     background-size: 24px !important;
+     width: 100%;
+ }
 
+ input[type="search"]::-webkit-search-decoration,
+ input[type="search"]::-webkit-search-cancel-button,
+ input[type="search"]::-webkit-search-results-button,
+ input[type="search"]::-webkit-search-results-decoration {
+     -webkit-appearance: none;
+ }
+ 
 // checkbox form & radio form
-.checkbox-section {
-    .check{
-        padding-right: 16px;
-    }
-    display: flex;
-    flex-wrap: wrap;
+.checkbox-group, .radiobox-group{
+    margin-top: 15px;
 }
 
 .form-check {
     margin-bottom: 10px;
     @include media-breakpoint-up(md) {
-        margin-bottom: 17px;
+        margin-bottom: 15px;
     }
 }
 .form-check-inline {
     align-items: flex-start;
+    flex-wrap: wrap;
     .form-check-input,
     .form-radio-input {
         min-width: 24px;
         cursor: pointer;
         height: 24px;
         width: 24px;
-        border: 2px solid $color-black;
-        border-radius: 3px;
-        margin-right: 14px;
+        border: 2px solid ;
+        border-color: $color-secondary-500;
+        margin-right: 8px;
         appearance: none;
 
         &:focus {
@@ -108,9 +120,11 @@ input[type=submit] {
 
         &:checked {
             position: relative;
+            border-color: $color-primary-500;
             &::before {
                 content: "";
                 position: absolute;
+                background-size: 24px;
                 background-image: url(../Img/Icons/check-black.svg);
                 height: 24px;
                 width: 24px;
@@ -119,93 +133,58 @@ input[type=submit] {
                 transform: translate(-50%, -50%);
             }
         }
+        &:disabled {
+            border-color: darken($color: $color-neutral-400, $amount: 15) ;
+            background-color:$color-neutral-400 ;
+            pointer-events: none;
+            cursor: unset;
+            ~ {
+                .form-check-label {
+                    opacity: 0.8;
+                    color:  $color-neutral-500;
+                }
+            }
+        }
     }
+
+    
+    .form-radio-input {
+        border-radius: 50%;
+
+        &:checked {
+            &::before {
+                background-image: unset;
+                background-color: $color-primary-500;
+                border-radius: 50%;
+                height: 14px;
+                width: 14px;
+            }
+        }
+        &:disabled {
+            border-color: darken($color: $color-neutral-400, $amount: 15) ;
+            background-color:$color-neutral-400 ;
+            pointer-events: none;
+            cursor: unset;
+            ~ {
+                .form-radio-label {
+                    opacity: 0.8;
+                    color:  $color-neutral-500;
+                }
+            }
+        }
+    }
+    
 }
-// input file upload
-.upload-section {
-    input[type=file] {
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22px; 
-        letter-spacing: 0.16px;
-    }
-
-    .file-upload-box {
-        position: relative;
-        width: 100%;
-        height: 280px;
-        @include media-breakpoint-up(md) {
-            height: 344px;
-        }
-    }
-
-    .file-upload-message {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #DDD;
-        p {
-            margin-top: 35px;
-            color: black;
-            padding: 0 27px;
-            text-align: center;
-        }
-    }
-
-    #feedback {
-        margin-top: 20px;
-    }
-
-    .file-upload-progress {
-        align-items: center;
-        display: flex;
-        margin-top: 20px;
-
-        #progress1 {
-            width: 100%;
-            height: 2em;
-        }
-
-        #progress2 {
-            width: 100%;
-            height: 2em;
-        }
-
-        #progress-info1 {
-            margin-bottom: 0;
-            padding-right: 5px;
-        }
-
-        #progress-info2 {
-            margin-bottom: 0;
-            padding-right: 5px;
-        }
-    }
+.form-radio {
+    margin-bottom: 15px;
 }
-// end of input type file
 
 // valdidation form style 
 form{
     &.was-validated {
-        .form-check {
-            flex-wrap: wrap;
-       }
         .form-group{
             margin-bottom: 20px;
         }
-
-
         .form-control:invalid,
         .form-control.is-invalid {
             border-color: $warning-red;
@@ -255,23 +234,13 @@ form{
         .form-check-input:valid~.form-check-label {
             color: $color-black;
         }
-
     }
 }
 
-.google-map{
-    margin-bottom: 30px;
-}
-.map{
-    margin-bottom: 40px;
-    p{
-        margin-bottom: 0;
-    }
-    .info-map{
-        margin-bottom: 30px;
-    }
-    .btn{
-        margin-top: 30px;
-    }
-
+.invalid-feedback{
+    font-family:  $font-family-second ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; 
+    margin-top: 6px;
 }

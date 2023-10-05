@@ -52,6 +52,7 @@ gulp.task('processJs', done => {
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
         'node_modules/masonry-layout/dist/masonry.pkgd.min.js',
         'Js/functions.js',
+        'Js/forms.js',
         'Js/main.js'
     ])
     // For production

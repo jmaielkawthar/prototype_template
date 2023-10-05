@@ -7,7 +7,7 @@ $text = isset($text) ? $text:'';
 <div class="ce-teaser-image-text">
     <div class="container">
         <div class="row">
-            <div  class="col-md-6 col-image">
+            <div class="col-md-6 col-image">
                 <?php if( !empty( $image ) ): ?>
                     <figure>
                         <img class="image" src="<?php echo $image ; ?>" alt="text-img" title="text-img">

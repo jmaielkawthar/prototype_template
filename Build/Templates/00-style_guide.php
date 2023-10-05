@@ -249,7 +249,7 @@ include 'Globals/head.php';
                     <h1 class="mb-20">H1 heading</h1>
                 </td>
                 <td>
-                    <p>  74/70/700 & 36/40 </p>
+                    <p>  65/65/700 & 36/40 </p>
                 </td>
             </tr>
             <tr>
@@ -257,7 +257,7 @@ include 'Globals/head.php';
                     <h2 class="mb-20">H2 heading</h2>
                 </td>
                 <td>
-                    <p> 40/40/700 & 32/35 </p>
+                    <p> 55/55/700 & 32/35</p>
                 </td>
             </tr>
             <tr> 
@@ -265,7 +265,7 @@ include 'Globals/head.php';
                     <h3 class="mb-20">H3 heading </h3>
                 </td>
                 <td>
-                    <p> 36/24/600 & 28/33</p>
+                    <p> 45/45/600 & 28/33</p>
                 </td>
             </tr>
             <tr> 
@@ -273,23 +273,23 @@ include 'Globals/head.php';
                     <h4 class="mb-20">H4 heading </h4>
                 </td>
                 <td>
-                    <p> 24/26/700 & 18/23</p>
+                    <p> 38/38/700 & 24/24</p>
                 </td>
             </tr>
             <tr> 
                 <td>
-                    <h4 class="mb-20">H5 heading </h4>
+                    <h5 class="mb-20">H5 heading </h5>
                 </td>
                 <td>
-                    <p> 24/26/700 & 18/23</p>
+                    <p> 25/25/700 & 20/20</p>
                 </td>
             </tr>
             <tr> 
                 <td>
-                    <h4 class="mb-20">H6 heading </h4>
+                    <h6 class="mb-20">H6 heading </h6>
                 </td>
                 <td>
-                    <p> 24/26/700 & 18/23</p>
+                    <p> 20/20/700 & 18/18 </p>
                 </td>
             </tr>
 
@@ -393,27 +393,52 @@ include 'Globals/head.php';
                         <a href="#" class="secondary-button">secondary-button</a>
                     </div>
                 </div>
+                <div class="col-md-4 my-20">
+                    <div class="d-flex">
+                        <a href="#" class="third-button">third-button</a>
+                    </div>
+                </div>
+                <div class="col-md-4 my-20">
+                    <div class="d-flex">
+                        <a href="#" class="fouth-button">fouth-button</a>
+                    </div>
+                </div>
+              
+              
               
             </div>
             <h2 class=" subtitle mb-20">links </h2>
             <div class="row align-items-center">
-            <div class="col-md-3 my-20">
+            <div class="col-md-2 my-20">
                     <div class="">
                         <a href="#" >default-link</a>
                     </div>
                 </div>
-                <div class="col-md-3 my-20">
+                <div class="col-md-2 my-20">
                     <div class="">
-                        <a href="#" class="a-link">a-link</a>
+                        <a href="#" class="link">link</a>
                     </div>
                 </div>
-                <div class="col-md-3 my-20">
-                    <div class="underline-link">
-                        <a href="#" class="a-link">underline-link</a>
+                <div class="col-md-2 my-20">
+                    <div class="">
+                        <a href="#" class="colored-link">colored-link</a>
                     </div>
                 </div>
-              
-              
+                <div class="col-md-2 my-20">
+                    <div>
+                        <a href="#" class="underline-link" >underline-link</a>
+                    </div>
+                </div>
+                <div class="col-md-2 my-20">
+                    <div>
+                        <a href="#" class="underline-colored-link" >underline-colored-link</a>
+                    </div>
+                </div>
+                <div class="col-md-2 my-20">
+                    <div class="animated-link">
+                        <a href="#" >animated-link</a>
+                    </div>
+                </div>
             </div>
     </div>
 
@@ -424,35 +449,98 @@ include 'Globals/head.php';
             <div class="col-sm-6 col-12">
                 <form action="" class="needs-validation p-md-30 p-10" novalidate>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label class="placeholder-text">Vorname</label>
-                                <input class="text-default form-control" placeholder="Vorname..." type="text" required>
+                                <label >Default</label>
+                                <input class="text-default form-control" placeholder="Placeholder..." type="text" required>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label class="placeholder-text">Nachname</label>
-                                <input class="text-default form-control" placeholder="Nachname..." type="text" required>
+                                <label >Selected</label>
+                                <input class="text-default form-control" placeholder="This is my text..." type="text" required>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label class="placeholder-text">Volltextsuche</label>
-                                <input class="text-default form-control" placeholder="z.B.: Nachhaltigkeit"
+                                <label >Deselect</label>
+                                <input class="text-default form-control" placeholder="Filled out field"
+                                    type="text" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group disabled">
+                                <label  >Disabled</label>
+                                <input class="text-default form-control" placeholder="Placeholder"
+                                    type="text" required disabled>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label  >Error/Mandatory field</label>
+                                <input class="text-default form-control" placeholder="Placeholder"
+                                    type="text" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label  >With icon</label>
+                                <input class="text-default form-control" placeholder="Placeholder"
                                     type="search" required>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                         </div>
                         <div class="col-md-6">
+                            <div class="form-group checkbox-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1" required>
+                                    <label class="form-check-label" for="inlineCheckbox1">Checbox</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox111"
+                                        value="option1" required>
+                                    <label class="form-check-label" for="inlineCheckbox111">Checkbox error</label>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option1" required disabled>
+                                    <label class="form-check-label" for="inlineCheckbox2">Checkbox disabled</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group radiobox-group">
+                                <div class="form-radio form-check-inline">
+                                    <input type="radio" id="Radio1" name="RadioInline" value="one" class=" form-radio-input" required>
+                                    <label class=" form-radio-label" for="Radio1">Radio button</label>
+                                </div>
+                                <div class="form-radio form-check-inline">
+                                    <input type="radio" id="Radio2" name="RadioInline" value="two" class=" form-radio-input" required>
+                                    <label class=" form-radio-label" for="Radio2">Radio error</label>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                                <div class="form-radio form-check-inline">
+                                    <input type="radio" id="Radio3" name="RadioInline" value="three" class=" form-radio-input" required disabled>
+                                    <label class=" form-radio-label" for="Radio3">Radio disabled</label>
+                                </div>
+             
+                            </div>
+                        </div>
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label class="placeholder-text">kategorie</label>
-                                <select class="form-select form-control" typp="select" required>
-                                    <option selected disabled value="">Alle</option>
+                                <label >Dropdown</label>
+                                <select class="form-select form-control" type="select" required>
+                                    <option selected value="">Bitte wählen</option>
                                     <option>option...1</option>
                                     <option>.option..2</option>
                                     <option>..option.3</option>
@@ -461,38 +549,16 @@ include 'Globals/head.php';
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="placeholder-text">TEst Disabled</label>
-                        <input class="text-default form-control" placeholder="disabled..." type="text" disabled>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-                    <div class="form-group">
-                        <label class="placeholder-text">Land</label>
-                        <select class="form-select form-control" typp="select" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>..option.1</option>
-                            <option>..option.2</option>
-                            <option>..option.3</option>
-                            <option>.option..4</option>
-                            <option>.option..5</option>
-                        </select>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-                    <div class="form-group">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11"
-                                    value="option1" required>
-                                <label class="form-check-label" for="inlineCheckbox11">zweiten Ansprechpartner
-                                    hinzufügen (optional)</label>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="primary-button" value="submit" type="submit">
                             </div>
                         </div>
-
+                    </div>
                 </form>
             </div>
-
+            
         </div>
-
     </div>
     <div class="list-section">
         <h2 class="title-style-guide"> lists </h2>

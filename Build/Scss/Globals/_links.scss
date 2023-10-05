@@ -1,31 +1,70 @@
+
 a{
+    // default link
     // 16/22/400
-    font-size:$font-size-regular-mobile-0;
-    line-height:$line-height-regular-mobile-0;
+    font-size: $font-size-regular-mobile-0;
+    line-height : $line-height-regular-mobile-0;
     color: $dark-gray;
     @include media-breakpoint-up(md) {
-        font-size: $font-size-regular-0;
+        font-size:  $font-size-regular-0;
         line-height:$line-height-regular-0;
     }
     &:hover{
-        color: $dark-gray;
+        color: $dark-gray
+    }
+    
+    &.disabled {
+        pointer-events: none;
+        cursor: default;
     }
 }
-.a-link {
+
+// link without hover action
+.link{
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+// link with colored text on hover 
+.colored-link { 
     color: $dark-gray;
     text-decoration: none;
     &:hover {
         text-decoration: none;
-        color : $color-yellow ;
+        color :$dark-gray_1;
     }
 }
-
-.underline-link {
+// link with underlined text on hover 
+.underline-link{
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        border-bottom: 1px solid $color-yellow;
+    }
+}
+// link with colored & underlined text on hover 
+.underline-colored-link{
+    color: $dark-gray;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid $color-yellow;
+        color :$dark-gray_1;
+    }
+}
+// link with animated underlined text on hover 
+.animated-link {
     a {
         position: relative;
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid transparent;
+        padding-bottom: 2px;
         &:hover {
             border-bottom: 1px solid transparent;
             &:before {
@@ -39,7 +78,7 @@ a{
             left: 0;
             right: 100%;
             bottom: 0;
-            background: $color-yellow;
+            background:$color-yellow;
             height: 1px;
             transition-property: right;
             transition-duration: 0.5s;
@@ -47,3 +86,4 @@ a{
         }
     }
 }
+
